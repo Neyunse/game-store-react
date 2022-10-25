@@ -1,0 +1,54 @@
+.productList {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: 50px;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    margin-bottom: 67px;
+  }
+  .container__items {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    .itemLink {
+      text-decoration: none;
+      color: white;
+      .card {
+        width: 350px;
+        @media only screen and (min-width: 320px) and (max-width: 780px) {
+          width: 100%;
+        }
+        .image_container {
+          overflow: hidden;
+          width: 100%;
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover {
+              opacity: 0.8;
+              cursor: pointer;
+            }
+          }
+        }
+        .saleOldText {
+          color: white;
+
+          text-decoration: line-through;
+        }
+        .price {
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.e_content__container {
+  width: 421px;
+  display: inline-flex;
+  gap: 10px;
+  background: #3c3c3c;
+  padding: 22px;
+  border-radius: 10px;
+  flex-direction: column;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    width: 100%;
+  }
+  .e_bn__group {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    border: 2px solid #464646;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    height: 34px;
+    color: white;
+    background: #353535;
+
+    .e_bn__center {
+      display: flex;
+      font-size: 16px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .e_btn__left {
+      border-right: 2px solid #464646;
+    }
+    .e_btn__right {
+      border-left: 2px solid #464646;
+    }
+  }
+}

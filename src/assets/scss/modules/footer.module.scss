@@ -1,0 +1,13 @@
+.footer__container {
+  width: 100%;
+  background: #1a1919;
+
+  bottom: 0;
+  margin-top: 20px;
+  color: azure;
+  padding: 10px;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    padding: 0px;
+    display: none;
+  }
+}

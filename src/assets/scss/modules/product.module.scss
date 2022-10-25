@@ -1,0 +1,175 @@
+.header__top {
+  width: 100%;
+  height: 641px;
+  overflow: hidden;
+  position: relative;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    height: 241px;
+  }
+  .header__sale {
+    position: absolute;
+    left: -47px;
+    width: 198px;
+    top: 23px;
+    background: aqua;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    transform: rotate(-39deg);
+  }
+  .header__cover {
+    width: 100vw;
+    height: 100%;
+    .img__container {
+      height: 100%;
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.342);
+    }
+  }
+  .buttonAndDetails {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    margin-bottom: 20px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+    @media only screen and (min-width: 320px) and (max-width: 780px) {
+      position: absolute;
+      left: 0px;
+      bottom: 0;
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 0px;
+      background: #151515de;
+    }
+
+    .flexButtons {
+      display: inline-flex;
+      gap: 10px;
+    }
+    .saleText {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .saleOldText {
+      color: white;
+      font-size: 30px;
+      @media only screen and (min-width: 320px) and (max-width: 780px) {
+        font-size: 20px;
+      }
+      text-decoration: line-through;
+    }
+    .price {
+      color: white;
+      font-size: 30px;
+    }
+  }
+}
+.screenshots {
+  display: inline-flex;
+  gap: 3px;
+  margin-top: 19px;
+  width: 100vw;
+  position: relative;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    flex-wrap: wrap;
+  }
+  div {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (min-width: 320px) and (max-width: 780px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    img {
+      border-radius: 20px;
+      width: 350px;
+      object-fit: cover;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 780px) {
+        width: 169px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.Container {
+  padding-bottom: 10px;
+  @media only screen and (min-width: 320px) and (max-width: 780px) {
+    margin-bottom: 65px;
+  }
+  .Container__video {
+    display: flex;
+    gap: 37px;
+    margin-top: 19px;
+    @media only screen and (min-width: 320px) and (max-width: 780px) {
+      flex-direction: column;
+    }
+    .videoPlayer {
+      overflow: hidden;
+      border-radius: 20px;
+      width: 600px;
+      aspect-ratio: 16/9;
+      height: 340px;
+      @media only screen and (min-width: 320px) and (max-width: 780px) {
+        width: 100%;
+      }
+
+      video {
+        object-fit: cover;
+      }
+      iframe {
+        width: 100%;
+        position: relative;
+        top: -10px;
+        @media only screen and (min-width: 320px) and (max-width: 780px) {
+          height: 200px;
+        }
+
+        object-fit: cover;
+      }
+    }
+    .desc {
+      color: rgb(180, 175, 175);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+    .img__left {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .short__desc {
+      color: rgb(180, 175, 175);
+      font-weight: 500;
+    }
+  }
+}

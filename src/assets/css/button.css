@@ -1,0 +1,8 @@
+.e_ui__btn {
+  border: 0;
+  padding: 5px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  height: 100% !important;
+  align-items: center;
+}
